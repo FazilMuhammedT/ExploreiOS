@@ -199,6 +199,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Learning;
 				TargetAttributes = {
+					D518026A18E17AA000332D37 = {
+						DevelopmentTeam = Z58XZK9AL7;
+					};
 					D518028B18E17AA000332D37 = {
 						TestTargetID = D518026A18E17AA000332D37;
 					};
@@ -376,6 +379,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dibya Pattanaik (C65NF9SL6Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dibya Pattanaik (C65NF9SL6Y)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExploreiOS/ExploreiOS-Prefix.pch";
 				INFOPLIST_FILE = "ExploreiOS/ExploreiOS-Info.plist";
@@ -389,6 +394,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dibya Pattanaik (C65NF9SL6Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dibya Pattanaik (C65NF9SL6Y)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExploreiOS/ExploreiOS-Prefix.pch";
 				INFOPLIST_FILE = "ExploreiOS/ExploreiOS-Info.plist";

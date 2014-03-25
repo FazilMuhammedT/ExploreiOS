@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    IBOutlet UILabel *exploreLabel;
+    
+}
+- (IBAction)clickTheButton:(id)sender;
 
 @end
 
@@ -24,6 +28,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)clickTheButton:(id)sender{
+    exploreLabel.hidden = !exploreLabel.hidden;
 }
 
 @end
