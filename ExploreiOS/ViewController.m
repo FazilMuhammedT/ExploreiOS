@@ -31,6 +31,7 @@
 }
 
 - (IBAction)clickTheButton:(id)sender{
+    NSLog(@"Button clicked");
     exploreLabel.hidden = !exploreLabel.hidden;
     NSLog(@"Explore Label is %d", exploreLabel.hidden);
 
