@@ -10,18 +10,7 @@
 
 @interface ViewController (){
     IBOutlet UILabel *exploreLabel;
-    IBOutlet UILabel *resultLabel;
-    IBOutlet UILabel *trialLabel;
-
-    IBOutlet UITextField *numberTextField;
-
-    
-    //Guess Number
-    int answer;
-    int guess;
-    int turn;
-    
-}
+ }
 - (IBAction) clickTheButton:(id)sender;
 
 @end
@@ -32,11 +21,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    answer = 0;
-    guess = 0;
-    turn = 0;
-    
-    answer = arc4random()%100 + 1;
 
 }
 
@@ -53,26 +37,6 @@
 
 }
 
-//Logic to Guess the number taken from
-//http://www.raywenderlich.com/38557/learn-to-code-ios-apps-1-welcome-to-programming
 
-- (IBAction) checkTheNumberButton:(id)sender{
-    guess = numberTextField.text.integerValue;
-        if(guess > answer){
-            resultLabel.text = @"Guess a Lower Value!";
-            numberTextField.text = @"";
-            [numberTextField resignFirstResponder];
-        }
-        else if(guess < answer){
-            resultLabel.text = @"Guess a Higher Value!";
-            numberTextField.text = @"";
-            [numberTextField resignFirstResponder];
-        }
-        else{
-            resultLabel.text = [NSString stringWithFormat:@"Correct! The answer was %i",answer];
-            [numberTextField resignFirstResponder];
-        }
-    trialLabel.text =[NSString stringWithFormat:@"Trial Taken %i",++turn];
-}
 
 @end
