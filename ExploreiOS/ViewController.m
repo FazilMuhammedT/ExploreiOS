@@ -35,10 +35,6 @@
     exploreLabel.hidden = !exploreLabel.hidden;
     NSLog(@"Explore Label is %d", exploreLabel.hidden);
 
-    NSLog(@"Log line addded from online git repository");
-    NSLog(@"Log line addded from Xcode to push");
-
-
 }
 
 @end
