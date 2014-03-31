@@ -28,6 +28,7 @@
 		D5E4BD6618E94BD00090F00A /* AppleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD6518E94BD00090F00A /* AppleViewController.m */; };
 		D5E4BD6918E94BE70090F00A /* RayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD6818E94BE70090F00A /* RayViewController.m */; };
 		D5E4BD6F18E955FC0090F00A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD6E18E955FC0090F00A /* Person.m */; };
+		D5E4BD7218E979190090F00A /* TapMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD7118E979190090F00A /* TapMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		D5E4BD6818E94BE70090F00A /* RayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayViewController.m; sourceTree = "<group>"; };
 		D5E4BD6D18E955FC0090F00A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
 		D5E4BD6E18E955FC0090F00A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
+		D5E4BD7018E979190090F00A /* TapMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapMeViewController.h; path = ViewController/TapMeViewController.h; sourceTree = "<group>"; };
+		D5E4BD7118E979190090F00A /* TapMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapMeViewController.m; path = ViewController/TapMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,12 +201,14 @@
 		D5E4BD6A18E955710090F00A /* RayTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				D5E4BD5A18E2DA880090F00A /* ObjectPlayViewController.h */,
+				D5E4BD5A18E2DA880090F00A /* AddPersonViewController.h */,
 				D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */,
 				D5E4BD5718E2D7EC0090F00A /* GuessNumberViewController.h */,
 				D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */,
 				D5E4BD5D18E2DAAE0090F00A /* BullsEyeViewController.h */,
 				D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */,
+				D5E4BD7018E979190090F00A /* TapMeViewController.h */,
+				D5E4BD7118E979190090F00A /* TapMeViewController.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				D5E4BD6918E94BE70090F00A /* RayViewController.m in Sources */,
 				D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */,
 				D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */,
+				D5E4BD7218E979190090F00A /* TapMeViewController.m in Sources */,
 				D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */,
 				D518027F18E17AA000332D37 /* AppDelegate.m in Sources */,
 				D5E4BD6F18E955FC0090F00A /* Person.m in Sources */,

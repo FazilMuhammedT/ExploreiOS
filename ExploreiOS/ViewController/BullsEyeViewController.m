@@ -81,7 +81,7 @@
 }
 
 
-#pragma mark - Actiom Method
+#pragma mark - Action Method
 
 - (IBAction) showAlert
 {

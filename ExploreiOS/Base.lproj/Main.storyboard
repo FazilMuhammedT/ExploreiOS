@@ -513,6 +513,16 @@ Your goal is to place the slider as close as possible to the target value. The c
                                             <segue destination="z9S-ID-L24" kind="push" id="e9B-F2-bs0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUl-aj-3lB">
+                                        <rect key="frame" x="164" y="29" width="150" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Tap Me!">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="P4y-jw-s6X" kind="push" id="hvG-ef-Bmu"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Raywenderlich iOS Apprentice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8i-ja-0Nb">
                                         <rect key="frame" x="20" y="118" width="246" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -551,10 +561,10 @@ Your goal is to place the slider as close as possible to the target value. The c
             </objects>
             <point key="canvasLocation" x="377" y="344"/>
         </scene>
-        <!--View Controller-->
+        <!--Tap Me View Controller-->
         <scene sceneID="UGV-HK-XBJ">
             <objects>
-                <viewController id="P4y-jw-s6X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TapMe" id="P4y-jw-s6X" userLabel="Tap Me View Controller" customClass="TapMeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="89d-2g-sX5"/>
                         <viewControllerLayoutGuide type="bottom" id="atT-9Z-laK"/>
@@ -562,12 +572,42 @@ Your goal is to place the slider as close as possible to the target value. The c
                     <view key="view" contentMode="scaleToFill" id="poM-qS-jMQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm8-mH-1Fe">
+                                <rect key="frame" x="56" y="228" width="187" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Tap Me" backgroundImage="BullsEye-Button-Normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="P4y-jw-s6X" eventType="touchUpInside" id="Kzt-qp-lGS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time 30" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="NTd-l1-f4H">
+                                <rect key="frame" x="49" y="123" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-1N-3bu">
+                                <rect key="frame" x="49" y="418" width="200" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.72941178080000002" blue="0.45882356169999999" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XA6-L6-zjU"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="LYm-1N-3bu" id="du4-C8-igT"/>
+                        <outlet property="timerLabel" destination="NTd-l1-f4H" id="mSW-GH-QmS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pj-pS-7p5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="-356"/>
+            <point key="canvasLocation" x="1567" y="1074"/>
         </scene>
     </scenes>
     <resources>
