@@ -77,16 +77,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-g5-Lqd">
-                                <rect key="frame" x="50" y="246" width="221" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="m2i-g8-qYQ" kind="push" id="Bhz-3z-UGg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFJ-Ij-nQ2">
                                 <rect key="frame" x="26" y="166" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -293,10 +283,10 @@ Your goal is to place the slider as close as possible to the target value. The c
             </objects>
             <point key="canvasLocation" x="1261" y="468"/>
         </scene>
-        <!--Object Play View Controller-->
+        <!--Add Person View Controller-->
         <scene sceneID="pMX-cK-lhg">
             <objects>
-                <viewController storyboardIdentifier="Object Play" id="m2i-g8-qYQ" userLabel="Object Play View Controller" customClass="ObjectPlayViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Add Person" id="m2i-g8-qYQ" userLabel="Add Person View Controller" customClass="AddPersonViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q2Y-sg-N1f"/>
                         <viewControllerLayoutGuide type="bottom" id="eAO-Wc-5Rr"/>
@@ -373,7 +363,7 @@ Your goal is to place the slider as close as possible to the target value. The c
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oh-Sr-wAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="1052"/>
+            <point key="canvasLocation" x="1180" y="1074"/>
         </scene>
         <!--Guess Number View Controller-->
         <scene sceneID="sXn-6D-3pW">
@@ -470,7 +460,7 @@ Your goal is to place the slider as close as possible to the target value. The c
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VeD-1h-XWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864" y="344"/>
+            <point key="canvasLocation" x="819" y="1074"/>
         </scene>
         <!--Apple View Controller-->
         <scene sceneID="QtH-Zh-O9Z">
@@ -524,19 +514,29 @@ Your goal is to place the slider as close as possible to the target value. The c
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Raywenderlich iOS Apprentice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8i-ja-0Nb">
-                                        <rect key="frame" x="20" y="67" width="246" height="21"/>
+                                        <rect key="frame" x="20" y="118" width="246" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65r-b4-TEj">
-                                        <rect key="frame" x="20" y="96" width="100" height="30"/>
+                                        <rect key="frame" x="20" y="147" width="86" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Bull's Eye">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="6w4-5H-Xa4" kind="push" id="iBF-kG-ZET"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-g5-Lqd">
+                                        <rect key="frame" x="20" y="60" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Add Person">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="m2i-g8-qYQ" kind="push" id="Bhz-3z-UGg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -567,7 +567,7 @@ Your goal is to place the slider as close as possible to the target value. The c
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pj-pS-7p5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="728"/>
+            <point key="canvasLocation" x="819" y="-356"/>
         </scene>
     </scenes>
     <resources>

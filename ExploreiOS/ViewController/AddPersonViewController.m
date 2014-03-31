@@ -1,5 +1,5 @@
 //
-//  ObjectPlayViewController.m
+//  AddPersonViewController.m
 //  ExploreiOS
 //
 //  Logic based on
@@ -9,10 +9,10 @@
 //  Copyright (c) 2014 Learning. All rights reserved.
 //
 
-#import "ObjectPlayViewController.h"
+#import "AddPersonViewController.h"
 #import "Person.h"
 
-@interface ObjectPlayViewController (){
+@interface AddPersonViewController (){
     NSMutableArray *peopleArray;
 }
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation ObjectPlayViewController
+@implementation AddPersonViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,6 +67,8 @@
                                 @"lastName":self.lastNameTextField.text,
                                 @"age": self.ageTextField.text}];
         [peopleArray addObject:person];
+        
+        
     }
 }
 

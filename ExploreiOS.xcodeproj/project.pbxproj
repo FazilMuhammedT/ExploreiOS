@@ -22,7 +22,7 @@
 		D518029818E17AA000332D37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D518029618E17AA000332D37 /* InfoPlist.strings */; };
 		D518029A18E17AA000332D37 /* ExploreiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D518029918E17AA000332D37 /* ExploreiOSTests.m */; };
 		D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */; };
-		D5E4BD5C18E2DA880090F00A /* ObjectPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5B18E2DA880090F00A /* ObjectPlayViewController.m */; };
+		D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */; };
 		D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */; };
 		D5E4BD6318E91AD40090F00A /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = D5E4BD6218E91AD40090F00A /* BullsEye.html */; };
 		D5E4BD6618E94BD00090F00A /* AppleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD6518E94BD00090F00A /* AppleViewController.m */; };
@@ -62,8 +62,8 @@
 		D518029918E17AA000332D37 /* ExploreiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreiOSTests.m; sourceTree = "<group>"; };
 		D5E4BD5718E2D7EC0090F00A /* GuessNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuessNumberViewController.h; path = ViewController/GuessNumberViewController.h; sourceTree = "<group>"; };
 		D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuessNumberViewController.m; path = ViewController/GuessNumberViewController.m; sourceTree = "<group>"; };
-		D5E4BD5A18E2DA880090F00A /* ObjectPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectPlayViewController.h; path = ViewController/ObjectPlayViewController.h; sourceTree = "<group>"; };
-		D5E4BD5B18E2DA880090F00A /* ObjectPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectPlayViewController.m; path = ViewController/ObjectPlayViewController.m; sourceTree = "<group>"; };
+		D5E4BD5A18E2DA880090F00A /* AddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPersonViewController.h; path = ViewController/AddPersonViewController.h; sourceTree = "<group>"; };
+		D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPersonViewController.m; path = ViewController/AddPersonViewController.m; sourceTree = "<group>"; };
 		D5E4BD5D18E2DAAE0090F00A /* BullsEyeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BullsEyeViewController.h; path = ViewController/BullsEyeViewController.h; sourceTree = "<group>"; };
 		D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BullsEyeViewController.m; path = ViewController/BullsEyeViewController.m; sourceTree = "<group>"; };
 		D5E4BD6218E91AD40090F00A /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = Resources/BullsEye.html; sourceTree = "<group>"; };
@@ -183,8 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				D5E4BD6A18E955710090F00A /* RayTutorial */,
-				D5E4BD5D18E2DAAE0090F00A /* BullsEyeViewController.h */,
-				D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -201,9 +199,11 @@
 			isa = PBXGroup;
 			children = (
 				D5E4BD5A18E2DA880090F00A /* ObjectPlayViewController.h */,
-				D5E4BD5B18E2DA880090F00A /* ObjectPlayViewController.m */,
+				D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */,
 				D5E4BD5718E2D7EC0090F00A /* GuessNumberViewController.h */,
 				D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */,
+				D5E4BD5D18E2DAAE0090F00A /* BullsEyeViewController.h */,
+				D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 			files = (
 				D518028518E17AA000332D37 /* ViewController.m in Sources */,
 				D5E4BD6918E94BE70090F00A /* RayViewController.m in Sources */,
-				D5E4BD5C18E2DA880090F00A /* ObjectPlayViewController.m in Sources */,
+				D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */,
 				D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */,
 				D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */,
 				D518027F18E17AA000332D37 /* AppDelegate.m in Sources */,
