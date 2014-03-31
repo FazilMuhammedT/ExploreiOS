@@ -1,5 +1,5 @@
 //
-//  SampleViewController.h
+//  BullsEyeController.h
 //  ExploreiOS
 //
 //  Created by Fazil T on 26/03/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SampleViewController : UIViewController
+@interface BullsEyeViewController : UIViewController
 
 @end
