@@ -17,6 +17,11 @@
 
 @implementation ViewController
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
