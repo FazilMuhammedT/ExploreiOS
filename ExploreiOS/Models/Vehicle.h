@@ -3,6 +3,7 @@
 //  ExploreiOS
 //
 //  http://www.raywenderlich.com/45940/intro-object-oriented-design-part-1
+//  http://www.raywenderlich.com/45942/intro-object-oriented-design-part-2
 //
 //  Created by Fazil T on 01/04/14.
 //  Copyright (c) 2014 Learning. All rights reserved.
@@ -29,5 +30,7 @@
 -(NSString *)vehicleTitleString;
 //Convenience method to get the vehicle's details.
 -(NSString *)vehicleDetailsString;
+//Factory Method
++ (instancetype)vehicleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels;
 
 @end

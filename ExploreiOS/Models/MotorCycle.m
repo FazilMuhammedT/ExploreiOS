@@ -3,6 +3,7 @@
 //  ExploreiOS
 //
 //  http://www.raywenderlich.com/45940/intro-object-oriented-design-part-1
+//  http://www.raywenderlich.com/45942/intro-object-oriented-design-part-2
 //
 //  Created by Fazil T on 01/04/14.
 //  Copyright (c) 2014 Learning. All rights reserved.
@@ -11,7 +12,7 @@
 #import "MotorCycle.h"
 
 @implementation MotorCycle
-
+/*
 #pragma mark - Initialization
 - (id)init
 {
@@ -21,6 +22,19 @@
     }
     
     return self;
+}
+*/
+#pragma mark - Factory Method
++(MotorCycle *)motorcycleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise
+{
+//Create a new instance of the motorcycle with the basic properties by calling the Factory
+    //method on the superclass.
+    MotorCycle *newMotorcycle = [MotorCycle vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:@"gas engine" wheels:2];
+    
+    //Set the Motorcycle-specific properties.
+    newMotorcycle.engineNoise = engineNoise;
+    
+    return newMotorcycle;
 }
 
 #pragma mark - Superclass Overrides

@@ -3,6 +3,7 @@
 //  ExploreiOS
 //
 //  http://www.raywenderlich.com/45940/intro-object-oriented-design-part-1
+//  http://www.raywenderlich.com/45942/intro-object-oriented-design-part-2
 //
 //  Created by Fazil T on 01/04/14.
 //  Copyright (c) 2014 Learning. All rights reserved.
@@ -12,6 +13,7 @@
 
 @implementation Car
 
+/*
 - (id)init
 {
     if (self = [super init]) {
@@ -21,6 +23,25 @@
     }
     return self;
 }
+*/
+
+#pragma mark - Factory Method
+
++(Car *)carWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource numberOfDoors:(NSInteger)numberOfDoors convertible:(BOOL)isConvertible hatchback:(BOOL)isHatchback sunroof:(BOOL)hasSunroof
+{
+    //Create the car object using the superclass factory method.
+    Car *newCar = [Car vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:powerSource wheels:4];
+    
+    //Set the car-specific properties using the passed-in variables.
+    newCar.numberOfDoors = numberOfDoors;
+    newCar.isConvertible = isConvertible;
+    newCar.isHatchback = isHatchback;
+    newCar.hasSunroof = hasSunroof;
+    
+    //Return the fully instantiated Car object.
+    return newCar;
+}
+
 
 #pragma mark - Private method implementations
 - (NSString *)start
