@@ -226,4 +226,17 @@
  The complete set of frameworks for iOS is known collectively as Cocoa Touch.
  
  */
+
+/*
+    Icon.png            The icon for iPhone 3                       57x57 pixels
+    Icon@2x.png         The icon for iPhone 4 (Retina)              114x114 pixels
+    Icon-72.png         The icon for iPad                           72x72 pixels
+    Icon-72@2x.png      The icon for Retina iPad                    144x144 pixels
+    Icon-Small.png      The icon for Settings and Spotlight on iPhone 3, and Settings on iPad                                   29x29 pixels
+    Icon-Small@2x.png	The icon for Settings and Spotlight on iPhone 4 (Retina), and Settings on Retina iPad                                                        58x58 pixels
+    Icon-Small-50.png	The icon for Spotlight on iPad              50x50 pixels
+    Icon-Small-50@2x.png	The icon for Spotlight on Retina iPad	100x100 pixels
+    iTunesArtwork	The icon for iTunes	1024x1024 pixels
+*/
+
 @end

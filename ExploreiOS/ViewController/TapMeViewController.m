@@ -40,6 +40,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Tap Me";
+    //self.view.backgroundColor = [UIColor purpleColor]; // ADD THIS!!
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TapMe-bg_tile"]];
+    scoreLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TapMe-field_score.png"]];
+    timerLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TapMe-field_time.png"]];
+
     [self setupGame];
 
 }
@@ -55,7 +60,7 @@
 - (IBAction)buttonPressed {
     count++;
     
-    scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
+    scoreLabel.text = [NSString stringWithFormat:@"Score %i", count];
 }
 
 #pragma mark - Logical Methods
