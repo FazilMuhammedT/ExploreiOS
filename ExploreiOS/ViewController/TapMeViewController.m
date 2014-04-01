@@ -4,12 +4,14 @@
 //
 //  Refer the below link for the tutorial
 //  http://www.raywenderlich.com/25561/learn-to-code-ios-apps-3-your-first-app
+//  http://www.raywenderlich.com/27191/learn-to-code-ios-apps-4-making-it-beautiful
 //
 //  Created by Fazil T on 31/03/14.
 //  Copyright (c) 2014 Learning. All rights reserved.
 //
 
 #import "TapMeViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface TapMeViewController ()<UIAlertViewDelegate>{
     IBOutlet UILabel *scoreLabel;
@@ -19,6 +21,11 @@
     NSInteger count;
     NSInteger seconds;
     NSTimer *timer;
+
+    // Add these AVAudioPlayer objects!
+    AVAudioPlayer *buttonBeep;
+    AVAudioPlayer *secondBeep;
+    AVAudioPlayer *backgroundMusic;
 
 }
 
@@ -45,6 +52,10 @@
     scoreLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TapMe-field_score.png"]];
     timerLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"TapMe-field_time.png"]];
 
+    buttonBeep = [self setupAudioPlayerWithFile:@"ButtonTap" type:@"wav"];
+    secondBeep = [self setupAudioPlayerWithFile:@"SecondBeep" type:@"wav"];
+    backgroundMusic = [self setupAudioPlayerWithFile:@"HallOfTheMountainKing" type:@"mp3"];
+
     [self setupGame];
 
 }
@@ -61,6 +72,8 @@
     count++;
     
     scoreLabel.text = [NSString stringWithFormat:@"Score %i", count];
+    [buttonBeep play];
+
 }
 
 #pragma mark - Logical Methods
@@ -80,13 +93,17 @@
                                            selector:@selector(subtractTime)
                                            userInfo:nil
                                             repeats:YES];
+    [backgroundMusic setVolume:0.3];
+    [backgroundMusic play];
+
 }
 
 - (void)subtractTime {
     // 1
     seconds--;
     timerLabel.text = [NSString stringWithFormat:@"Time: %i",seconds];
-    
+    [secondBeep play];
+
     // 2
     if (seconds == 0) {
         [timer invalidate];
@@ -110,6 +127,29 @@
     }
 }
 
+#pragma mark - Set Audio Player
+
+- (AVAudioPlayer *)setupAudioPlayerWithFile:(NSString *)file type:(NSString *)type
+{
+    // 1 tell you where in the project to look
+    // AVAudioPlayer needs to know the path in the form of a URL, so the full path is converted to URL format.
+    NSString *path = [[NSBundle mainBundle] pathForResource:file ofType:type];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    
+    // 2 A NSError object will store an error message if something goes wrong when setting up the AVAudioPlayer
+    NSError *error;
+    
+    // 3 You’re passing in the URL, and the error will get filled in if something goes wrong.
+    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    
+    // 4 If something goes wrong, the audioPlayer will be set to nil, which you can check for with the exclamation mark symbol
+    if (!audioPlayer) {
+        NSLog(@"%@",[error description]);
+    }
+    
+    // 5 If all goes well, the AVAudioPlayer object will be returned!
+    return audioPlayer;
+}
 
 /*
 #pragma mark - Navigation
