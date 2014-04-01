@@ -36,6 +36,8 @@
 		D5E4BD7E18EA80810090F00A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD7D18EA80810090F00A /* Car.m */; };
 		D5E4BD8118EA86440090F00A /* VehicleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8018EA86440090F00A /* VehicleListTableViewController.m */; };
 		D5E4BD8418EA869E0090F00A /* VehicleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8318EA869E0090F00A /* VehicleDetailViewController.m */; };
+		D5E4BD8718EAB1C80090F00A /* MotorCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8618EAB1C80090F00A /* MotorCycle.m */; };
+		D5E4BD8A18EAB4BF0090F00A /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8918EAB4BF0090F00A /* Truck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,10 @@
 		D5E4BD8018EA86440090F00A /* VehicleListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleListTableViewController.m; path = ViewController/VehicleListTableViewController.m; sourceTree = "<group>"; };
 		D5E4BD8218EA869E0090F00A /* VehicleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleDetailViewController.h; path = ViewController/VehicleDetailViewController.h; sourceTree = "<group>"; };
 		D5E4BD8318EA869E0090F00A /* VehicleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleDetailViewController.m; path = ViewController/VehicleDetailViewController.m; sourceTree = "<group>"; };
+		D5E4BD8518EAB1C80090F00A /* MotorCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotorCycle.h; path = Models/MotorCycle.h; sourceTree = "<group>"; };
+		D5E4BD8618EAB1C80090F00A /* MotorCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotorCycle.m; path = Models/MotorCycle.m; sourceTree = "<group>"; };
+		D5E4BD8818EAB4BF0090F00A /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Truck.h; path = Models/Truck.h; sourceTree = "<group>"; };
+		D5E4BD8918EAB4BF0090F00A /* Truck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Truck.m; path = Models/Truck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +261,10 @@
 				D5E4BD7A18EA7E200090F00A /* Vehicle.m */,
 				D5E4BD7C18EA80810090F00A /* Car.h */,
 				D5E4BD7D18EA80810090F00A /* Car.m */,
+				D5E4BD8518EAB1C80090F00A /* MotorCycle.h */,
+				D5E4BD8618EAB1C80090F00A /* MotorCycle.m */,
+				D5E4BD8818EAB4BF0090F00A /* Truck.h */,
+				D5E4BD8918EAB4BF0090F00A /* Truck.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -373,6 +383,8 @@
 				D518027F18E17AA000332D37 /* AppDelegate.m in Sources */,
 				D5E4BD8418EA869E0090F00A /* VehicleDetailViewController.m in Sources */,
 				D5E4BD8118EA86440090F00A /* VehicleListTableViewController.m in Sources */,
+				D5E4BD8718EAB1C80090F00A /* MotorCycle.m in Sources */,
+				D5E4BD8A18EAB4BF0090F00A /* Truck.m in Sources */,
 				D5E4BD6F18E955FC0090F00A /* Person.m in Sources */,
 				D5E4BD6618E94BD00090F00A /* AppleViewController.m in Sources */,
 				D518027B18E17AA000332D37 /* main.m in Sources */,
