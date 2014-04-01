@@ -32,6 +32,8 @@
 		D5E4BD7618EA77D20090F00A /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5E4BD7318EA77D20090F00A /* HallOfTheMountainKing.mp3 */; };
 		D5E4BD7718EA77D20090F00A /* ButtonTap.wav in Resources */ = {isa = PBXBuildFile; fileRef = D5E4BD7418EA77D20090F00A /* ButtonTap.wav */; };
 		D5E4BD7818EA77D20090F00A /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = D5E4BD7518EA77D20090F00A /* SecondBeep.wav */; };
+		D5E4BD7B18EA7E200090F00A /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD7A18EA7E200090F00A /* Vehicle.m */; };
+		D5E4BD7E18EA80810090F00A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD7D18EA80810090F00A /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		D5E4BD7318EA77D20090F00A /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = HallOfTheMountainKing.mp3; path = Resources/HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
 		D5E4BD7418EA77D20090F00A /* ButtonTap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ButtonTap.wav; path = Resources/ButtonTap.wav; sourceTree = "<group>"; };
 		D5E4BD7518EA77D20090F00A /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = SecondBeep.wav; path = Resources/SecondBeep.wav; sourceTree = "<group>"; };
+		D5E4BD7918EA7E200090F00A /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vehicle.h; path = Models/Vehicle.h; sourceTree = "<group>"; };
+		D5E4BD7A18EA7E200090F00A /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vehicle.m; path = Models/Vehicle.m; sourceTree = "<group>"; };
+		D5E4BD7C18EA80810090F00A /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Models/Car.h; sourceTree = "<group>"; };
+		D5E4BD7D18EA80810090F00A /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = Models/Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,10 @@
 			children = (
 				D5E4BD6D18E955FC0090F00A /* Person.h */,
 				D5E4BD6E18E955FC0090F00A /* Person.m */,
+				D5E4BD7918EA7E200090F00A /* Vehicle.h */,
+				D5E4BD7A18EA7E200090F00A /* Vehicle.m */,
+				D5E4BD7C18EA80810090F00A /* Car.h */,
+				D5E4BD7D18EA80810090F00A /* Car.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -349,10 +359,12 @@
 				D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */,
 				D5E4BD7218E979190090F00A /* TapMeViewController.m in Sources */,
 				D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */,
+				D5E4BD7E18EA80810090F00A /* Car.m in Sources */,
 				D518027F18E17AA000332D37 /* AppDelegate.m in Sources */,
 				D5E4BD6F18E955FC0090F00A /* Person.m in Sources */,
 				D5E4BD6618E94BD00090F00A /* AppleViewController.m in Sources */,
 				D518027B18E17AA000332D37 /* main.m in Sources */,
+				D5E4BD7B18EA7E200090F00A /* Vehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
