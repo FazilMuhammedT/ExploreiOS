@@ -11,12 +11,13 @@
 #import "VehicleListTableViewController.h"
 #import "VehicleDetailViewController.h"
 #import "Vehicle.h"
-#import "Car.h"
-#import "MotorCycle.h"
-#import "Truck.h"
+//#import "Car.h"           //USE SINGLETON
+//#import "MotorCycle.h"    //USE SINGLETON
+//#import "Truck.h"         //USE SINGLETON
+#import "VehicleList.h"
 
 @interface VehicleListTableViewController ()
-@property (nonatomic, strong) NSMutableArray *vehicles;
+//@property (nonatomic, strong) NSMutableArray *vehicles;//USE SINGLETON
 
 @end
 
@@ -37,10 +38,10 @@
     [super awakeFromNib];
 
     // Initialize the vehicle array
-    self.vehicles = [NSMutableArray array];
+    //self.vehicles = [NSMutableArray array]; //USE SINGLETON
     
     // Call the setup method
-    [self setupVehicleArray];
+    //[self setupVehicleArray]; //USE SINGLETON
     
     // Set the title of the View Controller, which will display in the Navigation bar.
     self.title = @"Vehicles";
@@ -64,10 +65,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+/* //USE SINGLETON
 #pragma mark - Data setup
 -(void)setupVehicleArray
 {
-    /*
+    
     //Create a car.
     Car *mustang = [[Car alloc] init];
     mustang.brandName = @"Ford";
@@ -109,30 +111,7 @@
     
     //Add it to the array.
     [self.vehicles addObject:prius];
-    */
-    
-    //Create a car.
-    Car *mustang = [Car carWithBrandName:@"Ford" modelName:@"Mustang" modelYear:1968
-                             powerSource:@"gas engine" numberOfDoors:2 convertible:YES hatchback:NO sunroof:NO];
-    
-    //Add it to the array
-    [self.vehicles addObject:mustang];
-    
-    //Create another car.
-    Car *outback = [Car carWithBrandName:@"Subaru" modelName:@"Outback" modelYear:1999
-                             powerSource:@"gas engine" numberOfDoors:5 convertible:NO hatchback:YES sunroof:NO];
-    
-    //Add it to the array.
-    [self.vehicles addObject:outback];
-    
-    //Create another car
-    Car *prius = [Car carWithBrandName:@"Toyota" modelName:@"Prius" modelYear:2007
-                           powerSource:@"hybrid engine" numberOfDoors:5 convertible:YES hatchback:YES sunroof:YES];
-    
-    //Add it to the array.
-    [self.vehicles addObject:prius];
 
-    /*
     //Create a motorcycle
     MotorCycle *harley = [[MotorCycle alloc] init];
     harley.brandName = @"Harley-Davidson";
@@ -176,7 +155,29 @@
     
     //Add it to the array
     [self.vehicles addObject:eighteenWheeler];
-    */
+ 
+    
+    //Create a car.
+    Car *mustang = [Car carWithBrandName:@"Ford" modelName:@"Mustang" modelYear:1968
+                             powerSource:@"gas engine" numberOfDoors:2 convertible:YES hatchback:NO sunroof:NO];
+    
+    //Add it to the array
+    [self.vehicles addObject:mustang];
+    
+    //Create another car.
+    Car *outback = [Car carWithBrandName:@"Subaru" modelName:@"Outback" modelYear:1999
+                             powerSource:@"gas engine" numberOfDoors:5 convertible:NO hatchback:YES sunroof:NO];
+    
+    //Add it to the array.
+    [self.vehicles addObject:outback];
+    
+    //Create another car
+    Car *prius = [Car carWithBrandName:@"Toyota" modelName:@"Prius" modelYear:2007
+                           powerSource:@"hybrid engine" numberOfDoors:5 convertible:YES hatchback:YES sunroof:YES];
+    
+    //Add it to the array.
+    [self.vehicles addObject:prius];
+
     //Add a motorcycle
     MotorCycle *harley = [MotorCycle motorcycleWithBrandName:@"Harley-Davidson"
                                                    modelName:@"Softail" modelYear:1979 engineNoise:@"Vrrrrrrrroooooooooom!"];
@@ -207,7 +208,7 @@
     NSSortDescriptor *modelYear = [NSSortDescriptor sortDescriptorWithKey:@"modelYear" ascending:NO];
     [self.vehicles sortUsingDescriptors:@[modelYear]];
 }
-
+*/
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -219,14 +220,16 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.vehicles.count;
+//    return self.vehicles.count;//USE SINGLETON
+    return [[VehicleList sharedInstance] vehicles].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    Vehicle *rowVehicle = self.vehicles[indexPath.row];
+//    Vehicle *rowVehicle = self.vehicles[indexPath.row]; //USE SINGLETON
+    Vehicle *rowVehicle = [[VehicleList sharedInstance] vehicles][indexPath.row];
     cell.textLabel.text = [rowVehicle vehicleTitleString];
     return cell;
 }
@@ -279,7 +282,8 @@
     // Pass the selected object to the new view controller.
     if ([[segue identifier] isEqualToString:@"VehicleDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Vehicle *selectedVehicle = self.vehicles[indexPath.row];
+//        Vehicle *selectedVehicle = self.vehicles[indexPath.row]; //USE SINGLETON
+        Vehicle *selectedVehicle = [[VehicleList sharedInstance] vehicles][indexPath.row];
         [[segue destinationViewController] setDetailVehicle:selectedVehicle];
     }
 

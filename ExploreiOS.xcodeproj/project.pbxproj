@@ -39,6 +39,7 @@
 		D5E4BD8718EAB1C80090F00A /* MotorCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8618EAB1C80090F00A /* MotorCycle.m */; };
 		D5E4BD8A18EAB4BF0090F00A /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8918EAB4BF0090F00A /* Truck.m */; };
 		D5E4BD8E18EAB9770090F00A /* UIAlertView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD8D18EAB9770090F00A /* UIAlertView+Convenience.m */; };
+		D5E4BD9118EAF1D70090F00A /* VehicleList.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD9018EAF1D70090F00A /* VehicleList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		D5E4BD8918EAB4BF0090F00A /* Truck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Truck.m; path = Models/Truck.m; sourceTree = "<group>"; };
 		D5E4BD8C18EAB9770090F00A /* UIAlertView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+Convenience.h"; path = "Category/UIAlertView+Convenience.h"; sourceTree = "<group>"; };
 		D5E4BD8D18EAB9770090F00A /* UIAlertView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Convenience.m"; path = "Category/UIAlertView+Convenience.m"; sourceTree = "<group>"; };
+		D5E4BD8F18EAF1D70090F00A /* VehicleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleList.h; path = Models/VehicleList.h; sourceTree = "<group>"; };
+		D5E4BD9018EAF1D70090F00A /* VehicleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleList.m; path = Models/VehicleList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 				D5E4BD8618EAB1C80090F00A /* MotorCycle.m */,
 				D5E4BD8818EAB4BF0090F00A /* Truck.h */,
 				D5E4BD8918EAB4BF0090F00A /* Truck.m */,
+				D5E4BD8F18EAF1D70090F00A /* VehicleList.h */,
+				D5E4BD9018EAF1D70090F00A /* VehicleList.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E4BD9118EAF1D70090F00A /* VehicleList.m in Sources */,
 				D518028518E17AA000332D37 /* ViewController.m in Sources */,
 				D5E4BD6918E94BE70090F00A /* RayViewController.m in Sources */,
 				D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */,
