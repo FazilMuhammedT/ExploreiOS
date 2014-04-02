@@ -22,6 +22,7 @@
 		D518029818E17AA000332D37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D518029618E17AA000332D37 /* InfoPlist.strings */; };
 		D518029A18E17AA000332D37 /* ExploreiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D518029918E17AA000332D37 /* ExploreiOSTests.m */; };
 		D5AD2A1D18EBC82A00EAF432 /* QuoteGenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD2A1C18EBC82A00EAF432 /* QuoteGenViewController.m */; };
+		D5AD2A1F18EBEF8E00EAF432 /* Quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5AD2A1E18EBEF8E00EAF432 /* Quotes.plist */; };
 		D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */; };
 		D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */; };
 		D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */; };
@@ -75,6 +76,7 @@
 		D518029918E17AA000332D37 /* ExploreiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreiOSTests.m; sourceTree = "<group>"; };
 		D5AD2A1B18EBC82A00EAF432 /* QuoteGenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteGenViewController.h; path = ViewController/QuoteGenViewController.h; sourceTree = "<group>"; };
 		D5AD2A1C18EBC82A00EAF432 /* QuoteGenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteGenViewController.m; path = ViewController/QuoteGenViewController.m; sourceTree = "<group>"; };
+		D5AD2A1E18EBEF8E00EAF432 /* Quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Quotes.plist; path = Resources/Quotes.plist; sourceTree = "<group>"; };
 		D5E4BD5718E2D7EC0090F00A /* GuessNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuessNumberViewController.h; path = ViewController/GuessNumberViewController.h; sourceTree = "<group>"; };
 		D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuessNumberViewController.m; path = ViewController/GuessNumberViewController.m; sourceTree = "<group>"; };
 		D5E4BD5A18E2DA880090F00A /* AddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPersonViewController.h; path = ViewController/AddPersonViewController.h; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				D5E4BD7418EA77D20090F00A /* ButtonTap.wav */,
 				D5E4BD7518EA77D20090F00A /* SecondBeep.wav */,
 				D5E4BD6218E91AD40090F00A /* BullsEye.html */,
+				D5AD2A1E18EBEF8E00EAF432 /* Quotes.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				D518027918E17AA000332D37 /* InfoPlist.strings in Resources */,
 				D518028218E17AA000332D37 /* Main.storyboard in Resources */,
 				D5E4BD7618EA77D20090F00A /* HallOfTheMountainKing.mp3 in Resources */,
+				D5AD2A1F18EBEF8E00EAF432 /* Quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
