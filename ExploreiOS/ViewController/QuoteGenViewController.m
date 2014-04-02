@@ -79,6 +79,18 @@
         NSString *myQuote = self.myQuotes[index];
         // 4 - Display the quote in the text view
         self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  myQuote];
+        
+        //To display all the quote
+        // 1.2 - Initialize string for concatenated quotes
+        NSString *allMyQuotes = @"";
+        NSString *my_quote = nil;
+        // 1.3 - Iterate through array
+        for (int x=0; x < arrayTotal; x++) {
+            my_quote = self.myQuotes[x];
+            allMyQuotes = [NSString stringWithFormat:@"%@\n%@\n",  allMyQuotes,my_quote];
+        }
+        self.quoteText.text = [NSString stringWithFormat:@"%@", allMyQuotes];
+
     } // 2 - Get movie quotes
     else {
         // 2.1 - determine category
@@ -98,11 +110,35 @@
             int index = (arc4random() % arrayTotal);
             // 2.6 - get the quote string for the index
             NSString *quote = filteredArray[index][@"quote"];
-            self.quoteText.text = [NSString stringWithFormat:@"Movie Quote:\n\n%@",  quote];
+            // 2.7 - Check if there is a source
+            //NSString *source = [[filteredArray objectAtIndex:index] valueForKey:@"source"];
+            NSString *source = filteredArray[index] [@"source"];
+            if (![source length] == 0) {
+                quote = [NSString stringWithFormat:@"%@\n\n(%@)",  quote, source];
+            }
+            // 2.8 - Customize quote based on category
+            if ([selectedCategory isEqualToString:@"classic"]) {
+                quote = [NSString stringWithFormat:@"From Classic Movie\n\n%@",  quote];
+            } else {
+                quote = [NSString stringWithFormat:@"Movie Quote:\n\n%@",  quote];
+            }
+            // 2.9 - Display quote
+            self.quoteText.text = quote;
+            
+            // 2.10 - Update row to indicate that it has been displayed
+            int movieArrayTotal = [self.movieQuotes count];
+            NSString *quote1 = filteredArray[index][@"quote"];
+            for (int x=0; x < movieArrayTotal; x++) {
+                NSString *quote2 = self.movieQuotes[x][@"quote"];
+                if ([quote1 isEqualToString:quote2]) {
+                    NSMutableDictionary *itemAtIndex = (NSMutableDictionary *)self.movieQuotes[x];
+                    itemAtIndex[@"source"] = @"DONE";
+                }
+            }
+            
         } else {
             self.quoteText.text = [NSString stringWithFormat:@"No quotes to display."];
         }
-
     }
 }
 
