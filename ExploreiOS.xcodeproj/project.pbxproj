@@ -21,6 +21,7 @@
 		D518029018E17AA000332D37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D518027218E17AA000332D37 /* UIKit.framework */; };
 		D518029818E17AA000332D37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D518029618E17AA000332D37 /* InfoPlist.strings */; };
 		D518029A18E17AA000332D37 /* ExploreiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D518029918E17AA000332D37 /* ExploreiOSTests.m */; };
+		D5AD2A1D18EBC82A00EAF432 /* QuoteGenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD2A1C18EBC82A00EAF432 /* QuoteGenViewController.m */; };
 		D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */; };
 		D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */; };
 		D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */; };
@@ -72,6 +73,8 @@
 		D518029518E17AA000332D37 /* ExploreiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExploreiOSTests-Info.plist"; sourceTree = "<group>"; };
 		D518029718E17AA000332D37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D518029918E17AA000332D37 /* ExploreiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreiOSTests.m; sourceTree = "<group>"; };
+		D5AD2A1B18EBC82A00EAF432 /* QuoteGenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteGenViewController.h; path = ViewController/QuoteGenViewController.h; sourceTree = "<group>"; };
+		D5AD2A1C18EBC82A00EAF432 /* QuoteGenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteGenViewController.m; path = ViewController/QuoteGenViewController.m; sourceTree = "<group>"; };
 		D5E4BD5718E2D7EC0090F00A /* GuessNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuessNumberViewController.h; path = ViewController/GuessNumberViewController.h; sourceTree = "<group>"; };
 		D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuessNumberViewController.m; path = ViewController/GuessNumberViewController.m; sourceTree = "<group>"; };
 		D5E4BD5A18E2DA880090F00A /* AddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPersonViewController.h; path = ViewController/AddPersonViewController.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				D5E4BD8018EA86440090F00A /* VehicleListTableViewController.m */,
 				D5E4BD8218EA869E0090F00A /* VehicleDetailViewController.h */,
 				D5E4BD8318EA869E0090F00A /* VehicleDetailViewController.m */,
+				D5AD2A1B18EBC82A00EAF432 /* QuoteGenViewController.h */,
+				D5AD2A1C18EBC82A00EAF432 /* QuoteGenViewController.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5E4BD9118EAF1D70090F00A /* VehicleList.m in Sources */,
+				D5AD2A1D18EBC82A00EAF432 /* QuoteGenViewController.m in Sources */,
 				D518028518E17AA000332D37 /* ViewController.m in Sources */,
 				D5E4BD6918E94BE70090F00A /* RayViewController.m in Sources */,
 				D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */,
