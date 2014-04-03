@@ -9,6 +9,7 @@
 //
 
 #import "ScaryBugTableViewController.h"
+#import "ScaryBugDetailViewController.h"
 #import "ScaryBugData.h"
 #import "ScaryBugDoc.h"
 
@@ -121,7 +122,12 @@
 }
 */
 
-/*
+// Implement the method didMoveToParentViewController
+-(void)didMoveToParentViewController:(UIViewController *)parent{
+    [self.tableView reloadData];
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -129,7 +135,11 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    ScaryBugDetailViewController *detailController =segue.destinationViewController;
+    ScaryBugDoc *bug = [self.bugs objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    detailController.detailItem = bug;
+
 }
-*/
+
 
 @end
