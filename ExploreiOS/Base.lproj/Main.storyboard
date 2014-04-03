@@ -536,13 +536,13 @@ Your goal is to place the slider as close as possible to the target value. The c
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Raywenderlich iOS Apprentice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8i-ja-0Nb">
-                                        <rect key="frame" x="20" y="118" width="246" height="21"/>
+                                        <rect key="frame" x="20" y="188" width="246" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65r-b4-TEj">
-                                        <rect key="frame" x="20" y="147" width="86" height="30"/>
+                                        <rect key="frame" x="20" y="217" width="86" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Bull's Eye">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -579,6 +579,16 @@ Your goal is to place the slider as close as possible to the target value. The c
                                         </state>
                                         <connections>
                                             <segue destination="m5B-iO-Wsv" kind="push" id="BUC-F1-DSk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJY-oG-q5G">
+                                        <rect key="frame" x="20" y="125" width="94" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Scary Bug">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2ej-WB-RZ4" kind="push" id="qeX-vh-1ri"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13N-yw-cUD">
@@ -1019,6 +1029,66 @@ Your goal is to place the slider as close as possible to the target value. The c
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5p-kK-fdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3621" y="1074"/>
+        </scene>
+        <!--Scary Bug Table View Controller-->
+        <scene sceneID="xlX-eY-RLG">
+            <objects>
+                <tableViewController storyboardIdentifier="ScaryBugTable" id="2ej-WB-RZ4" userLabel="Scary Bug Table View Controller" customClass="ScaryBugTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yJ8-kv-WOa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BugCell" textLabel="0gH-tZ-cCD" style="IBUITableViewCellStyleDefault" id="Smy-a5-3WR">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Smy-a5-3WR" id="g2Q-p0-Ua6">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0gH-tZ-cCD">
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Fhx-ya-cJA" kind="push" id="BDP-Ho-btn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2ej-WB-RZ4" id="DPF-7H-aVw"/>
+                            <outlet property="delegate" destination="2ej-WB-RZ4" id="orH-ya-Q3K"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Gvp-O4-8oD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NI-G1-V9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4014" y="1074"/>
+        </scene>
+        <!--Scare Bug View Controller-->
+        <scene sceneID="r8n-bd-XbC">
+            <objects>
+                <viewController id="Fhx-ya-cJA" userLabel="Scare Bug View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YNp-er-BHF"/>
+                        <viewControllerLayoutGuide type="bottom" id="IXh-UW-Zw0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vjb-Od-VTv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OAE-jp-BRv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keH-9W-myq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4410" y="1074"/>
         </scene>
     </scenes>
     <resources>
