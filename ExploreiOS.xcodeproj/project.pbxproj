@@ -44,6 +44,14 @@
 		D5BD705D18ED1D1D0079B10F /* ScaryBugDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD705C18ED1D1D0079B10F /* ScaryBugDetailViewController.m */; };
 		D5BD706618ED3EA20079B10F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5BD706318ED3EA20079B10F /* SVProgressHUD.bundle */; };
 		D5BD706718ED3EA20079B10F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD706518ED3EA20079B10F /* SVProgressHUD.m */; };
+		D5BD706A18ED4CDD0079B10F /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD706918ED4CDD0079B10F /* Album.m */; };
+		D5BD706D18ED4D750079B10F /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD706C18ED4D750079B10F /* AlbumView.m */; };
+		D5BD707118ED50620079B10F /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD707018ED50620079B10F /* LibraryAPI.m */; };
+		D5BD707518ED51840079B10F /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD707418ED51840079B10F /* PersistencyManager.m */; };
+		D5BD707B18ED593F0079B10F /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD707918ED593F0079B10F /* HTTPClient.m */; };
+		D5BD708218ED5CA20079B10F /* Album+TableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD708118ED5CA20079B10F /* Album+TableRepresentation.m */; };
+		D5BD708518ED5E2F0079B10F /* BlueLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD708418ED5E2F0079B10F /* BlueLibraryViewController.m */; };
+		D5BD708818ED6D510079B10F /* HorizontalScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BD708718ED6D510079B10F /* HorizontalScroller.m */; };
 		D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */; };
 		D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5B18E2DA880090F00A /* AddPersonViewController.m */; };
 		D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4BD5E18E2DAAE0090F00A /* BullsEyeViewController.m */; };
@@ -129,6 +137,22 @@
 		D5BD706318ED3EA20079B10F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		D5BD706418ED3EA20079B10F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		D5BD706518ED3EA20079B10F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		D5BD706818ED4CDD0079B10F /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Album.h; path = Models/Album.h; sourceTree = "<group>"; };
+		D5BD706918ED4CDD0079B10F /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Album.m; path = Models/Album.m; sourceTree = "<group>"; };
+		D5BD706B18ED4D750079B10F /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		D5BD706C18ED4D750079B10F /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		D5BD706F18ED50620079B10F /* LibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryAPI.h; path = API/LibraryAPI.h; sourceTree = "<group>"; };
+		D5BD707018ED50620079B10F /* LibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryAPI.m; path = API/LibraryAPI.m; sourceTree = "<group>"; };
+		D5BD707318ED51840079B10F /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersistencyManager.h; path = API/PersistencyManager.h; sourceTree = "<group>"; };
+		D5BD707418ED51840079B10F /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersistencyManager.m; path = API/PersistencyManager.m; sourceTree = "<group>"; };
+		D5BD707918ED593F0079B10F /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPClient.m; path = API/HTTPClient.m; sourceTree = "<group>"; };
+		D5BD707A18ED593F0079B10F /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPClient.h; path = API/HTTPClient.h; sourceTree = "<group>"; };
+		D5BD708018ED5CA20079B10F /* Album+TableRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Album+TableRepresentation.h"; path = "Category/Album+TableRepresentation.h"; sourceTree = "<group>"; };
+		D5BD708118ED5CA20079B10F /* Album+TableRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Album+TableRepresentation.m"; path = "Category/Album+TableRepresentation.m"; sourceTree = "<group>"; };
+		D5BD708318ED5E2F0079B10F /* BlueLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueLibraryViewController.h; path = ViewController/BlueLibraryViewController.h; sourceTree = "<group>"; };
+		D5BD708418ED5E2F0079B10F /* BlueLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlueLibraryViewController.m; path = ViewController/BlueLibraryViewController.m; sourceTree = "<group>"; };
+		D5BD708618ED6D510079B10F /* HorizontalScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScroller.h; sourceTree = "<group>"; };
+		D5BD708718ED6D510079B10F /* HorizontalScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScroller.m; sourceTree = "<group>"; };
 		D5E4BD5718E2D7EC0090F00A /* GuessNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuessNumberViewController.h; path = ViewController/GuessNumberViewController.h; sourceTree = "<group>"; };
 		D5E4BD5818E2D7EC0090F00A /* GuessNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuessNumberViewController.m; path = ViewController/GuessNumberViewController.m; sourceTree = "<group>"; };
 		D5E4BD5A18E2DA880090F00A /* AddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPersonViewController.h; path = ViewController/AddPersonViewController.h; sourceTree = "<group>"; };
@@ -222,6 +246,7 @@
 		D518027418E17AA000332D37 /* ExploreiOS */ = {
 			isa = PBXGroup;
 			children = (
+				D5BD707218ED506B0079B10F /* API */,
 				D5BD706118ED3EA20079B10F /* External Libraries */,
 				D5BD705718ED14DA0079B10F /* Helpers */,
 				D5BD705318ED14230079B10F /* Views */,
@@ -295,6 +320,10 @@
 			children = (
 				D5BD705418ED14230079B10F /* RateView.h */,
 				D5BD705518ED14230079B10F /* RateView.m */,
+				D5BD706B18ED4D750079B10F /* AlbumView.h */,
+				D5BD706C18ED4D750079B10F /* AlbumView.m */,
+				D5BD708618ED6D510079B10F /* HorizontalScroller.h */,
+				D5BD708718ED6D510079B10F /* HorizontalScroller.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +353,19 @@
 				D5BD706518ED3EA20079B10F /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		D5BD707218ED506B0079B10F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D5BD706F18ED50620079B10F /* LibraryAPI.h */,
+				D5BD707018ED50620079B10F /* LibraryAPI.m */,
+				D5BD707318ED51840079B10F /* PersistencyManager.h */,
+				D5BD707418ED51840079B10F /* PersistencyManager.m */,
+				D5BD707918ED593F0079B10F /* HTTPClient.m */,
+				D5BD707A18ED593F0079B10F /* HTTPClient.h */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		D5E4BD6018E2DAC30090F00A /* ViewController */ = {
@@ -373,6 +415,8 @@
 				D5BD703D18ED06480079B10F /* ScaryBugTableViewController.m */,
 				D5BD705B18ED1D1D0079B10F /* ScaryBugDetailViewController.h */,
 				D5BD705C18ED1D1D0079B10F /* ScaryBugDetailViewController.m */,
+				D5BD708318ED5E2F0079B10F /* BlueLibraryViewController.h */,
+				D5BD708418ED5E2F0079B10F /* BlueLibraryViewController.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -406,6 +450,8 @@
 				D5BD703718ED02FF0079B10F /* ScaryBugData.m */,
 				D5BD703918ED03B10079B10F /* ScaryBugDoc.h */,
 				D5BD703A18ED03B10079B10F /* ScaryBugDoc.m */,
+				D5BD706818ED4CDD0079B10F /* Album.h */,
+				D5BD706918ED4CDD0079B10F /* Album.m */,
 			);
 			name = RayTutorial;
 			sourceTree = "<group>";
@@ -415,6 +461,8 @@
 			children = (
 				D5E4BD8C18EAB9770090F00A /* UIAlertView+Convenience.h */,
 				D5E4BD8D18EAB9770090F00A /* UIAlertView+Convenience.m */,
+				D5BD708018ED5CA20079B10F /* Album+TableRepresentation.h */,
+				D5BD708118ED5CA20079B10F /* Album+TableRepresentation.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -538,12 +586,19 @@
 				D5E4BD9118EAF1D70090F00A /* VehicleList.m in Sources */,
 				D5AD2A1D18EBC82A00EAF432 /* QuoteGenViewController.m in Sources */,
 				D5AD2A2518EC016600EAF432 /* QuoteQuizViewController.m in Sources */,
+				D5BD706A18ED4CDD0079B10F /* Album.m in Sources */,
 				D518028518E17AA000332D37 /* ViewController.m in Sources */,
 				D5E4BD6918E94BE70090F00A /* RayViewController.m in Sources */,
+				D5BD706D18ED4D750079B10F /* AlbumView.m in Sources */,
 				D5E4BD5C18E2DA880090F00A /* AddPersonViewController.m in Sources */,
+				D5BD708218ED5CA20079B10F /* Album+TableRepresentation.m in Sources */,
 				D5E4BD5F18E2DAAE0090F00A /* BullsEyeViewController.m in Sources */,
+				D5BD708518ED5E2F0079B10F /* BlueLibraryViewController.m in Sources */,
 				D5BD705D18ED1D1D0079B10F /* ScaryBugDetailViewController.m in Sources */,
 				D5E4BD7218E979190090F00A /* TapMeViewController.m in Sources */,
+				D5BD707518ED51840079B10F /* PersistencyManager.m in Sources */,
+				D5BD707B18ED593F0079B10F /* HTTPClient.m in Sources */,
+				D5BD708818ED6D510079B10F /* HorizontalScroller.m in Sources */,
 				D5BD706718ED3EA20079B10F /* SVProgressHUD.m in Sources */,
 				D5E4BD5918E2D7EC0090F00A /* GuessNumberViewController.m in Sources */,
 				D5E4BD8E18EAB9770090F00A /* UIAlertView+Convenience.m in Sources */,
@@ -555,6 +610,7 @@
 				D5E4BD8418EA869E0090F00A /* VehicleDetailViewController.m in Sources */,
 				D5AD2A2818EC05D300EAF432 /* Quiz.m in Sources */,
 				D5E4BD8118EA86440090F00A /* VehicleListTableViewController.m in Sources */,
+				D5BD707118ED50620079B10F /* LibraryAPI.m in Sources */,
 				D5E4BD8718EAB1C80090F00A /* MotorCycle.m in Sources */,
 				D5E4BD8A18EAB4BF0090F00A /* Truck.m in Sources */,
 				D5AD2A2D18EC1AE300EAF432 /* QuizTipViewController.m in Sources */,

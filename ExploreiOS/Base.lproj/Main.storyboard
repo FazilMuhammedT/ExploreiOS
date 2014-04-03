@@ -365,6 +365,24 @@ Your goal is to place the slider as close as possible to the target value. The c
             </objects>
             <point key="canvasLocation" x="1180" y="1074"/>
         </scene>
+        <!--Blue Library View Controller-->
+        <scene sceneID="ImH-hI-vAz">
+            <objects>
+                <viewController storyboardIdentifier="BlueLibrary" id="3K9-6e-88m" customClass="BlueLibraryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gi3-lh-CuU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BLM-5b-vPn"/>
+                    <connections>
+                        <outlet property="view" destination="gi3-lh-CuU" id="XA4-ZA-Fr1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T07-WY-Ame" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="1744"/>
+        </scene>
         <!--Guess Number View Controller-->
         <scene sceneID="sXn-6D-3pW">
             <objects>
@@ -558,13 +576,23 @@ Your goal is to place the slider as close as possible to the target value. The c
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bJY-oG-q5G">
-                                        <rect key="frame" x="20" y="125" width="94" height="30"/>
+                                        <rect key="frame" x="20" y="114" width="94" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Scary Bug">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="2ej-WB-RZ4" kind="push" id="qeX-vh-1ri"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nfz-n7-EcT">
+                                        <rect key="frame" x="172" y="114" width="94" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Blue Library">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="3K9-6e-88m" kind="push" id="rOa-PV-ugz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13N-yw-cUD">
